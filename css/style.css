@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+.game {
+  width: 90%;
+  max-width: 1300px;
+  margin: 50px auto;
+}
+.game__title {
+  font-size: 3.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .game__title {
+    font-size: 4rem;
+  }
+}
+.game__colors {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 200px;
+  border: 2px solid black;
+  margin: 40px auto;
+}
+@media screen and (min-width: 1200px) {
+  .game__colors {
+    height: 250px;
+    margin: 60px auto;
+  }
+}
+.game__color {
+  width: 25%;
+  background-color: gray;
+  height: 85%;
+  border: 2px solid black;
+}
+.game__color--red {
+  background-color: red;
+}
+.game__color--green {
+  background-color: green;
+}
+.game__color--blue {
+  background-color: blue;
+}
+.game__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media screen and (min-width: 1000px) {
+  .game__inputs {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+  }
+}
+.game__bid {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 280px;
+  padding: 5px;
+  text-align: center;
+  font-size: 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .game__bid {
+    width: 280px;
+    margin: 0;
+  }
+}
+.game__roll {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: white;
+  background-color: #555;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+@media screen and (min-width: 1000px) {
+  .game__roll {
+    margin: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+.game__roll:hover {
+  background-color: #222;
+}
+.game__result {
+  margin: 30px 0 20px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .game__result {
+    font-size: 2.5rem;
+  }
+}
+.game__wallet {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
+@media screen and (min-width: 1200px) {
+  .game__wallet {
+    font-size: 2.5rem;
+  }
+}
+.game__stats {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .game__stats {
+    font-size: 2.1rem;
+  }
+}
+.game__stats span {
+  margin: 0 5px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
