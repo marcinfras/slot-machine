@@ -131,6 +131,9 @@ body {
     font-size: 2.5rem;
   }
 }
+.game__money {
+  font-weight: bold;
+}
 .game__stats {
   margin-top: 20px;
   font-size: 1.8rem;
